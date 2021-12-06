@@ -9,7 +9,6 @@ import dev.cardoso.quotesmvvm.data.QuoteRemoteDataSourceImpl
 import dev.cardoso.quotesmvvm.data.QuoteRepositoryImpl
 import dev.cardoso.quotesmvvm.data.local.QuoteLocalDataSource
 import dev.cardoso.quotesmvvm.data.remote.QuoteApi
-import dev.cardoso.quotesmvvm.data.remote.QuoteApiImpl
 import dev.cardoso.quotesmvvm.data.remote.QuoteRemoteDataSource
 import dev.cardoso.quotesmvvm.domain.QuoteRepository
 
@@ -31,9 +30,9 @@ abstract class DataSourceModule {
         quoteRemoteDataSourceImpl:QuoteRemoteDataSourceImpl
     ): QuoteRemoteDataSource
 
-    @Binds
-    abstract fun bindQuoteApi(
-        quoteApiImpl: QuoteApiImpl
-    ): QuoteApi
+   
+
+
+
 
 }
